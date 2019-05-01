@@ -43,9 +43,9 @@ body {
   
   padding: 0;
   overflow: hidden;
-  font-weight: bold;
+  text-align:center;
 }
-.steps a {
+.steps a span{
   color: white;
   text-decoration: none;
 }
@@ -54,15 +54,15 @@ body {
   float: left;
   margin: 0 auto;
   width: 330px; /* 100 / number of steps */
-  height: 70px; /* total height */
+  height: 150px; /* total height */
   list-style-type: none;
-  padding: 5px 5px 5px 30px; /* padding around text, last should include arrow width */
+  padding: 5px 5px 5px 50px; /* padding around text, last should include arrow width */
   border-right: 3px solid white; /* width: gap between arrows, color: background of document */
   position: relative;
 }
 /* remove extra padding on the first object since it doesn't have an arrow to the left */
 .steps li:first-child {
-  padding-left: 5px;
+  padding-left: 15px;
 }
 /* white arrow to the left to "erase" background (starting from the 2nd object) */
 .steps li:nth-child(n+2)::before {
@@ -70,11 +70,11 @@ body {
   top:0;
   left:0;
   display: block;
-  border-left: 25px solid white; /* width: arrow width, color: background of document */
-  border-top: 40px solid transparent; /* width: half height */
-  border-bottom: 40px solid transparent; /* width: half height */
+  border-left: 40px solid white; /* width: arrow width, color: background of document */
+  border-top: 80px solid transparent; /* width: half height */
+  border-bottom: 80px solid transparent; /* width: half height */
   width: 0;
-  height: 0;
+  height: 150px;
   content: " ";
 }
 /* colored arrow to the right */
@@ -85,10 +85,10 @@ body {
   right: -25px; /* arrow width (negated) */
   display: block;
   border-left: 25px solid #7c8437; /* width: arrow width */
-  border-top: 40px solid transparent; /* width: half height */
-  border-bottom: 40px solid transparent; /* width: half height */
+  border-top: 75px solid transparent; /* width: half height */
+  border-bottom: 65px solid transparent; /* width: half height */
   width:0;
-  height:0;
+  height:150px;
   content: " ";
 }
 
@@ -99,59 +99,37 @@ body {
 .steps li::after { border-left-color: #666666 }
 
 /* Current */
-.steps li.current { background-color: #cccc00 }
+.steps li.current { background-color: #cccc00; }
 .steps li.current::after { border-left-color: #cccc00 }
 
 /* Following */
 .steps li.current ~ li { background-color: #009966 }
 .steps li.current ~ li::after { border-left-color: #fff }
 
+.current a span{color:#000}
  
- 
- .contact{
-		padding: 4%;
-		height: 400px;
-	}
-	.col-md-3{
-		background: #16a361;
-		padding: 2%;
-		border-top-left-radius: 0.5rem;
-		border-bottom-left-radius: 0.5rem;
-	}
-	.contact-info{
-		margin-top:10%;
-	}
-	.contact-info img{
-		margin-bottom: 15%;
-	}
-	.contact-info h2{
-		margin-bottom: 10%;
-	}
-	.col-md-9{
-		background: #fff;
-		padding: 3%;
-		border-top-right-radius: 0.5rem;
-		border-bottom-right-radius: 0.5rem;
-	}
-	.contact-form label{
-		font-weight:600;
-	}
-	.contact-form button{
-		background: #25274d;
-		color: #fff;
-		font-weight: 600;
-		width: 25%;
-	}
-	.contact-form button:focus{
-		box-shadow:none;
-	}
-	  .container1 {
-            
-            margin: 70px auto;
-        }
-        .slider-container {
-            width: 90%;
-            max-width: 500px;
-            margin: 0 auto 50px;
-        }
+
+	#spcir {
+  font-size: 20px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color:#fff;
+  color:#cccc00;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+	
+	
+	
+	
+	
+	
+	
+	  
+      
        
